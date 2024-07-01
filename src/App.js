@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import SearchBar from 'C:\\Users\\sdeva\\.vscode\\recipe-app\\src\\Components\\SearchBar';
-import RecipeList from 'C:\\Users\\sdeva\\.vscode\\recipe-app\\src\\Components\\RecipeList';
+import SearchBar from './SearchBar';
+import RecipeList from './RecipeList';
 
 const App = () => {
   const [recipes, setRecipes] = useState([]);
