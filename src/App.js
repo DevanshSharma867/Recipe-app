@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import SearchBar from './SearchBar';
 import RecipeList from './RecipeList';
+import logo from '../assets/logo.svg';
+import './styles/App.css';
 
 const App = () => {
   const [recipes, setRecipes] = useState([]);
@@ -26,6 +28,7 @@ const App = () => {
   return (
     <div className="App">
       <h1>Recipe Search</h1>
+      <img src={logo} alt="Logo" />
       <SearchBar onSearch={getRecipes} />
       <RecipeList recipes={recipes} />
     </div>
